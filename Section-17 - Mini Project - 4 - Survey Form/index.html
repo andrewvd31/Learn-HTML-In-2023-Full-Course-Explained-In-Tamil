@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <style>
+        form{text-align: center;}
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1>Free Survey Form</h1>
+        <p>Thank you for filling the form</p>
+        <label for="username">Name: <input id="username" type="text" placeholder="Enter your name"/></label>
+        <br><br>
+        <label for="email">Email: <input type="email" id="email" placeholder="Enter your email"/></label>
+        <br><br>
+        <label for="age">Age: (Optional)</label>
+        <br><br>
+        <input id="age" type="number" min="10" max="40" placeholder="Enter your age"/>
+        <p>Which option best describes your current role?</p>
+        <select>
+            <option value="Select current role">Select current role</option>
+            <option value="Student">Student</option>
+            <option value="Full time job">Full time job</option>
+            <option value="Full time learner">Full time learner</option>
+            <option value="Prefer not to say">Prefer not to say</option>
+            <option value="Others">Others</option>
+        </select>
+        <p>Do you like coding?</p>
+        <label for="definitely"><input type="radio" id="definitely" name="coding">Definitely</label>
+        <br><br>
+        <label for="may-be"><input type="radio" id="may-be" name="coding">May Be</label>
+        <br><br>
+        <label for="not-sure"><input type="radio" id="not-sure" name="coding">Not sure</label>
+        <p>What would you like to see improved?</p>
+        <label for="frontend"><input type="checkbox" id="frontend">Front End Projects</label>
+        <br><br>
+        <label for="backend"><input type="checkbox" id="backend">Back End Projects</label>
+        <p>Any comments or suggestions:</p>
+        <textarea cols="35" rows="10" placeholder="Any suggestions..."></textarea>
+        <br><br>
+        <button type="submit">SUBMIT</button>
+    </form>
+</body>
+</html>

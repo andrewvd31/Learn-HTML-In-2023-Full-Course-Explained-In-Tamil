@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Accessibility</title>
+</head>
+<body>
+    <button aria-label="close" aria-labelledby="box">X</button>
+    <div id="box">Click to close the dialog></div>
+    <p aria-hidden="true">Lorem ipsum dolor sit amet.</p>
+    <button aria-expanded="false" aria-controls="section"></button>
+    <div id="section">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <button aria-disabled="true">Click this</button>
+    <input type="checkbox" name="" id="" aria-checked="true">
+    <ul role="listbox">
+        <li role="option" aria-selected="true">Item 1</li>
+        <li role="option" aria-selected="false">Item 2</li>
+        <li role="option" aria-selected="false">Item 3</li>
+    </ul>
+</body>
+</html>
